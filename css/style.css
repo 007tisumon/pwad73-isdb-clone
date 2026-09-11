@@ -1,0 +1,646 @@
+/* Custom Palette and Typography Override */
+:root {
+  --isdb-primary: #06a0c8;
+  --isdb-secondary: #004d40;
+  --isdb-accent: #f39c12;
+  --isdb-light: #f8f9fa;
+  --isdb-dark: #1b2a4a;
+
+  --brand: #1499c7;
+  --brand-dark: #078fc0;
+  --page: #f5f6fa;
+  --border: #d9dce2;
+  --text: #202124;
+}
+
+*,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sans-seirf", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333333;
+  font-size: 1.4rem;
+}
+
+/* Top Utility Header */
+.top-header {
+  background-color: var(--isdb-secondary);
+  font-size: 0.875rem;
+}
+
+.top-header a {
+  color: #d1e7dd;
+  text-decoration: none;
+}
+
+.top-header a:hover {
+  color: #ffffff;
+}
+/* navbar custom style */
+
+.navbar {
+  background-color: var(--isdb-primary) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Navbar Custom Styling */
+.navbar-brand img {
+  max-width: 4.5rem;
+}
+.brand-text {
+  font-size: 14px !important;
+
+  font-weight: 600 !important;
+}
+.brand-h1 {
+  margin-bottom: 0 !important;
+  font-weight: bold;
+  font-size: 2rem !important;
+}
+
+.nav-link {
+  font-weight: 600;
+  color: var(--isdb-light) !important;
+  font-size: 12px !important;
+  padding-left: 0.1rem !important;
+  margin-left: 0.1rem !important;
+  transition: color 0.3s ease;
+}
+.navbar-toggler-icon {
+  color: #ffffff !important;
+}
+
+/* .nav-link:hover,
+.nav-link.active {
+    color: var(--isdb-primary) !important;
+} */
+
+/* Hero Carousel */
+.hero-carousel .carousel-item {
+  height: 480px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(8, 99, 67, 0.8) 100%
+  );
+}
+
+/* Feature Cards */
+.program-card {
+  border: none;
+  border-radius: 8px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.program-card .card-header-bg {
+  background-color: var(--isdb-primary);
+  height: 6px;
+}
+
+.btn-isdb {
+  background-color: var(--isdb-primary);
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-isdb:hover {
+  background-color: var(--isdb-secondary);
+  color: #ffffff;
+}
+
+/* Impact Statistics Counter Section */
+.stats-section {
+  background-color: var(--isdb-primary);
+  color: #ffffff;
+}
+
+/* Footer Section */
+footer {
+  background-color: var(--isdb-dark);
+  color: #d1d5db;
+}
+
+footer a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* second carousal */
+
+.carousel-sec {
+  margin-top: 50px;
+}
+
+.carousel-inner-sec {
+  height: 100px;
+}
+
+.carousel-caption-sec {
+  color: #ffffff;
+  top: 50%;
+}
+.nav-down-container {
+  width: 1000px;
+  margin: auto;
+  background-color: #000;
+}
+sec-caro {
+  width: 1000px;
+}
+
+/* sec 2 */
+/* ---------------- MAIN ---------------- */
+
+.section2 {
+  background-color: #f8fafc !important ;
+}
+.content-area {
+  padding-top: 34px;
+  padding-bottom: 30px;
+  background-color: #f8fafc;
+}
+.content-row {
+  --bs-gutter-x: 25px;
+  --bs-gutter-y: 20px;
+}
+
+/* left/middle tabs */
+.top-tabs {
+  height: 29px;
+  margin-bottom: 0;
+  color: #495057 !important;
+}
+.top-tabs .top-btn {
+  height: 29px;
+  padding: 6px 10px;
+  border: 1px solid #d9dce2;
+  border-bottom: 0;
+  border-radius: 0;
+  color: #242424;
+  background: #fff;
+  font-size: 12px;
+  line-height: 15px;
+}
+.top-tabs .top-btn.active {
+  background: #fff;
+  color: #333;
+  position: relative;
+  z-index: 2;
+}
+
+/* update hero */
+.feature-card {
+  background: #fff;
+  border: 1px solid #e0e1e5;
+  border-top: 0;
+  margin-bottom: 11px;
+}
+.feature-image-wrap {
+  position: relative;
+  height: 177px;
+  overflow: hidden;
+}
+.feature-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.image-label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  padding: 4px 7px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.feature-body {
+  padding: 10px 9px 9px;
+}
+.feature-title {
+  font-size: 14px;
+  line-height: 18px;
+  color: #555;
+  margin-bottom: 2px;
+}
+.feature-date {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* project rows */
+.project-card {
+  display: flex;
+  align-items: center;
+  height: 84px;
+  background: #fff;
+  border: 1px solid #e0e1e5;
+  margin-bottom: 10px;
+  padding: 7px 8px;
+}
+.project-image {
+  width: 120px;
+  height: 66px;
+  object-fit: cover;
+  flex: 0 0 120px;
+  margin-right: 10px;
+}
+.project-meta {
+  font-size: 11px;
+  line-height: 15px;
+  color: #444;
+}
+.project-name {
+  font-size: 13px;
+  line-height: 16px;
+  color: #171717;
+}
+
+/* middle profile cards */
+.profile-card {
+  display: flex;
+  min-height: 146px;
+  background: #fff;
+  border: 1px solid #e0e1e5;
+  margin-bottom: 11px;
+  padding: 9px 10px;
+}
+.profile-photo {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  object-position: top center;
+  flex: 0 0 128px;
+  margin-right: 10px;
+}
+.profile-info {
+  padding-top: 1px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #151515;
+}
+.profile-name {
+  font-size: 13px;
+  line-height: 16px;
+  margin-bottom: 0;
+}
+.profile-round {
+  color: #0088a9;
+  font-weight: 700;
+}
+
+/* right notices */
+.notice-title {
+  display: inline-block;
+  color: #fff;
+  background: #079dce;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 10px;
+  height: 35px;
+}
+.notice-line {
+  height: 1px;
+  background: #079dce;
+  margin-top: -1px;
+}
+.notice-list {
+  margin-top: 18px;
+  height: 610px;
+  overflow-y: auto;
+  background: #fff;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  scrollbar-color: #05a9db #f2f2f2;
+  scrollbar-width: auto;
+}
+.notice-list::-webkit-scrollbar {
+  width: 7px;
+}
+.notice-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.notice-list::-webkit-scrollbar-thumb {
+  background: #05a9db;
+}
+.notice-item {
+  padding: 9px 10px 8px;
+  border-bottom: 1px solid #ddd;
+  line-height: 15px;
+  font-size: 12px;
+}
+.notice-item strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.notice-date {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Keep the screenshot proportions on large displays */
+@media (min-width: 1200px) {
+  .site-container {
+    max-width: 1175px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .site-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+  }
+  .content-area {
+    padding-top: 20px;
+  }
+  .brand-title {
+    font-size: 22px;
+  }
+  .main-nav .nav-link {
+    padding-left: 0;
+  }
+  .notice-list {
+    height: 450px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .brand-logo {
+    width: 48px;
+    height: 56px;
+  }
+  .brand-title {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .brand-subtitle {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .feature-image-wrap {
+    height: 190px;
+  }
+  .project-card {
+    height: auto;
+    min-height: 84px;
+  }
+  .project-image {
+    width: 105px;
+    flex-basis: 105px;
+  }
+  .profile-card {
+    min-height: 125px;
+  }
+  .profile-photo {
+    width: 105px;
+    height: 105px;
+    flex-basis: 105px;
+  }
+}
+
+/* section 3 style */
+
+.page-wrap {
+  width: min(calc(100% - 34px), 1175px);
+  margin: 34px auto 50px;
+}
+
+.course-tabs {
+  border-bottom: 1px solid #1a9bc9;
+  padding-bottom: 3px;
+  margin-bottom: 17px;
+}
+
+.course-tabs .nav-link {
+  border: 0;
+  border-radius: 0;
+  padding: 6px 11px;
+  margin-right: 3px;
+  background: #1498c8;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.course-tabs .nav-link.active {
+  background: #202b3b;
+  color: #495057;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 8px 9px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 0;
+}
+
+.course-table {
+  margin-bottom: 40px;
+}
+
+.course-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.course-table thead th {
+  font-weight: 700;
+  padding: 10px 7px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.course-table tbody td {
+  padding: 9px 7px;
+  border-bottom: 1px solid #d9dde0;
+  vertical-align: middle;
+}
+
+.course-table tbody tr:nth-child(odd) {
+  background: #eee;
+}
+
+.course-table tbody tr:nth-child(even) {
+  background: #fff;
+}
+
+.course-table th:first-child,
+.course-table td:first-child {
+  width: 32px;
+}
+
+.course-table .hours {
+  width: 95px;
+}
+
+.course-table .duration {
+  width: 82px;
+}
+
+.course-table .course-name {
+  min-width: 340px;
+}
+
+.sidebar-card {
+  border: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #0000001c;
+  margin-bottom: 18px;
+  background: #fff;
+}
+
+.sidebar-card .card-header {
+  background: var(--isdb-primary);
+  color: #fff;
+  border: 0;
+  padding: 16px 17px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.sidebar-card .card-body {
+  padding: 20px;
+}
+
+.scholarship-image {
+  display: block;
+  width: 100%;
+  max-width: 191px;
+  height: 172px;
+  object-fit: cover;
+  margin: 0 auto 17px;
+  border-radius: 7px;
+  background: #ffd800;
+}
+
+.apply-btn {
+  background: #238fba;
+  color: #fff;
+  border: 0;
+  font-weight: 700;
+  width: 100%;
+  padding: 11px 10px;
+  border-radius: 5px;
+}
+
+.apply-btn:hover {
+  background: #197da5;
+  color: #fff;
+}
+
+.dates {
+  border-top: 1px solid #eee;
+  margin-top: 17px;
+  padding-top: 10px;
+}
+
+.date-row {
+  display: flex;
+  gap: 8px;
+  margin: 9px 0;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.calendar {
+  color: #1595c5;
+  font-size: 14px;
+  width: 13px;
+  flex: 0 0 13px;
+}
+
+.date-row strong {
+  display: block;
+  font-size: 12px;
+  color: #3c3c3c;
+}
+
+.date-row span {
+  color: #777;
+}
+
+@media (max-width: 991.98px) {
+  .page-wrap {
+    width: min(calc(100% - 24px), 760px);
+  }
+
+  .sidebar {
+    margin-top: 10px;
+  }
+
+  .course-table {
+    overflow-x: auto;
+  }
+
+  .course-table table {
+    min-width: 720px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .page-wrap {
+    width: calc(100% - 18px);
+    margin-top: 18px;
+  }
+
+  .site-navbar {
+    min-height: 60px;
+  }
+
+  .course-tabs .nav-link {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .section-title {
+    font-size: 13px;
+  }
+
+  .sidebar-card .card-header {
+    font-size: 15px;
+  }
+
+  .scholarship-image {
+    height: auto;
+    max-width: 220px;
+  }
+}
