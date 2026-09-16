@@ -14,52 +14,45 @@
 
 <body class="">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center fw-bold text-success" href="#">
-                <!-- Fallback text / Local Image Slot -->
-                <div class="">
-                    <img width="100%" height="100%" src="assets/isdb-bisew.png" alt="">
-                </div>
-                <div class="text-white">
-                    <h1 class="brand-h1 ">IsDB-BISEW</h1>
-                    <p class="brand-text">Islamic Development Bank <br>
-                        Bangladesh Islamic Solidarity Educational Wakf </p>
-
-
-                </div>
-            </a>
-            <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#mainNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="mainNavbar">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#">About IsDB-BISEW</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="programDropdown" role="button"
+    <nav class="navbar navbar-expand-lg site-navbar navbar-dark">
+        <div class="container-fluid nav-inner px-3 px-lg-0">
+            <a class="brand" href="#"><img src="assets/isdb-bisew.png" alt="IsDB-BISEW logo"><span
+                    class="brand-text"><span class="brand-name">IsDB-BISEW</span><span class="brand-sub">Islamic
+                        Development
+                        Bank<br>Bangladesh Islamic Solidarity Educational Wakf</span></span></a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link " href="aboutisdb.html">About IsDB-BISEW</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown">What We Do</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">IT Scholarship Programme</a></li>
-                            <li><a class="dropdown-item" href="#">Vocational Training Programme</a></li>
-                            <li><a class="dropdown-item" href="#">Madrasah Education Programme</a></li>
-                            <li><a class="dropdown-item" href="#">4-Year Diploma Scholarship</a></li>
+                            <li><a class="dropdown-item" href="#">IT Scholarship</a></li>
+                            <li><a class="dropdown-item" href="#">Vocational Training</a></li>
+                            <li><a class="dropdown-item" href="#">Other Programmes</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">IDB Bhaban</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">IDB Bhaban</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">IDB Bhaban-1</a></li>
+                            <li><a class="dropdown-item" href="#">IDB Bhaban-2</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#">Notice</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Photo Gallery</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">CareerHub</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- 
-    <div class="nav-down-container">
+
+    <div class="nav-down-container site-container">
         <div class="">
-            Trending Now
+            <a href="#" class="btn isdb-button">Trending Now</a>
 
         </div>
         <div class="sec-caro">
@@ -87,37 +80,60 @@
                 </button>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- 3. HERO SLIDER -->
-    <section id="heroSlider" class="carousel slide hero-carousel" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('https://picsum.photos/1200/400?random=1');">
-                <div class="hero-overlay d-flex align-items-center">
-                    <div class="container text-white">
-                        <h1 class="display-4 fw-bold">Empowering Underprivileged Youth</h1>
-                        <p class="lead">Providing professional-level IT & Vocational training for market success.</p>
-                        <a href="#" class="btn btn-isdb btn-lg mt-3">Explore Programmes</a>
+    <div class=" hero-bg">
+        <div class="site-container">
+            <section id="heroSlider" class="carousel slide hero-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"
+                        style="background-image: url('https://picsum.photos/1200/400?random=1');">
+                        <div class="hero-overlay d-flex align-items-center">
+                            <div class="container text-white">
+                                <h1 class="display-4 fw-bold">Empowering Underprivileged Youth</h1>
+                                <p class="lead">Providing professional-level IT & Vocational training for market
+                                    success.
+                                </p>
+                                <a href="#" class="btn btn-isdb btn-lg mt-3">Explore Programmes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item"
+                        style="background-image: url('https://picsum.photos/1200/400?random=2');">
+                        <div class="hero-overlay d-flex align-items-center">
+                            <div class="container text-white">
+                                <h1 class="display-4 fw-bold">IT Scholarship Programme</h1>
+                                <p class="lead">Vendor-certified IT training with high employment success.</p>
+                                <a href="#" class="btn btn-warning btn-lg mt-3">Apply Today</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="carousel-item" style="background-image: url('https://picsum.photos/1200/400?random=2');">
-                <div class="hero-overlay d-flex align-items-center">
-                    <div class="container text-white">
-                        <h1 class="display-4 fw-bold">IT Scholarship Programme</h1>
-                        <p class="lead">Vendor-certified IT training with high employment success.</p>
-                        <a href="#" class="btn btn-warning btn-lg mt-3">Apply Today</a>
-                    </div>
-                </div>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </section>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
-    </section>
+
+    </div>
+
+    <div class="small-section site-container py-5 ">
+        <p>Welcome to IsDB-BISEW</p>
+        <p class="fs-6 mt-4">The Islamic Development Bank-Bangladesh Islamic Solidarity Educational Wakf (IsDB-BISEW)
+            was
+            established in
+            1987
+            following an agreement between the Islamic Development Bank, Jeddah, Saudi Arabia and the Government of
+            Bangladesh.
+            IsDB-BISEW undertakes funding, formulating and implementing of programmes in the areas of education,
+            developing human
+            resources and strengthening educational institutions.</p>
+        <a href="" class="btn isdb-button mt-2">More</a>
+    </div>
 
     <!-- section 2 -->
     <section class="section2">
@@ -144,45 +160,46 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <a href="#" class="project-card">
                         <img src="images/project1.jpg" class="project-image" alt="">
                         <div class="project-meta">
                             <div>IT Scholarship Programme</div>
                             <div class="project-name">Project Name - Shariah Banking<br>Management System</div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="project-card">
+                    <a href="#" class="project-card">
                         <img src="images/project2.jpg" class="project-image" alt="">
                         <div class="project-meta">
                             <div>IT Scholarship Programme</div>
                             <div class="project-name">Project Name - Garments &amp;<br>Apparel Management System</div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="project-card">
+                    <a href="#" class="project-card">
                         <img src="images/project3.jpg" class="project-image" alt="">
                         <div class="project-meta">
                             <div>IT Scholarship Programme</div>
                             <div class="project-name">Project Name - Inventory &amp; Stock<br>Management System</div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="project-card">
+                    <a href="#" class="project-card">
                         <img src="images/project4.jpg" class="project-image" alt="">
                         <div class="project-meta">
                             <div>IT Scholarship Programme</div>
                             <div class="project-name">Class Project: Agro Marketplace<br>Management</div>
                         </div>
-                    </article>
+                    </a>
 
-                    <article class="project-card">
+                    <a href="#" class="project-card">
                         <img src="images/project5.jpg" class="project-image" alt="">
                         <div class="project-meta">
                             <div>IT Scholarship Programme</div>
                             <div class="project-name">Celebrating the Success of IsDB-BISEW<br>Graduates</div>
                         </div>
-                    </article>
+                    </a>
+                    <a href="#" class="btn isdb-button mt-2">More Updates</a>
                 </section>
 
                 <!-- MIDDLE COLUMN -->
@@ -246,6 +263,7 @@
                             <div>IT Scholarship Programme</div>
                         </div>
                     </article>
+                    <a href="#" class="btn isdb-button mt-2">More</a>
                 </section>
 
                 <!-- RIGHT COLUMN -->
@@ -305,6 +323,7 @@
                             <div class="notice-date">Apr 28, 2026 | IT Scholarship Programme</div>
                         </div>
                     </div>
+                    <a href="#" class="btn isdb-button mt-2">More Updates</a>
                 </section>
             </div>
         </main>
@@ -333,37 +352,40 @@
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Web and Mobile App Development using Spring Boot, Android &amp; Flutter</td>
+                                <td><a href="#">Web and Mobile App Development using Spring Boot, Android &amp; Flutter
+                                    </a></td>
                                 <td>788</td>
                                 <td>8.5</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Web Application Development with Laravel, React, Vue.js &amp; WordPress</td>
+                                <td><a href="#">Web Application Development with Laravel, React, Vue.js &amp; WordPress
+                                    </a>
+                                </td>
                                 <td>788</td>
                                 <td>8.5</td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>Cross Platform Apps using ASP.NET, Angular &amp; React</td>
+                                <td><a href="#">Cross Platform Apps using ASP.NET, Angular &amp; React</a></td>
                                 <td>788</td>
                                 <td>8.5</td>
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>Oracle Database Application Development</td>
+                                <td><a href="#">Oracle Database Application Development</a></td>
                                 <td>788</td>
                                 <td>8.5</td>
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>Network Solutions and System Administration</td>
+                                <td><a href="#">Network Solutions and System Administration</a></td>
                                 <td>788</td>
                                 <td>8.5</td>
                             </tr>
                             <tr>
                                 <td>6</td>
-                                <td>Graphics, Animation and Video Editing</td>
+                                <td><a href="#">Graphics, Animation and Video Editing</a></td>
                                 <td>788</td>
                                 <td>8.5</td>
                             </tr>
@@ -384,43 +406,43 @@
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>Architectural and Civil CAD</td>
+                                <td><a href="#">Architectural and Civil CAD</a></td>
                                 <td>788</td>
                                 <td>8.5</td>
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Web Application Development using Laravel &amp; React</td>
+                                <td><a href="#">Web Application Development using Laravel &amp; React</a></td>
                                 <td>460</td>
                                 <td>6</td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>Network System Administration</td>
+                                <td><a href="#">Network System Administration</a></td>
                                 <td>460</td>
                                 <td>6</td>
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>Graphics, Video Editing and Motion Graphics</td>
+                                <td><a href="#">Graphics, Video Editing and Motion Graphics</a></td>
                                 <td>460</td>
                                 <td>6</td>
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>Web Application Development Using ASP.NET</td>
+                                <td><a href="#">Web Application Development Using ASP.NET</a></td>
                                 <td>460</td>
                                 <td>6</td>
                             </tr>
                             <tr>
                                 <td>6</td>
-                                <td>Cloud Computing using Oracle Apex</td>
+                                <td><a href="#">Cloud Computing using Oracle Apex</a></td>
                                 <td>460</td>
                                 <td>6</td>
                             </tr>
                             <tr>
                                 <td>7</td>
-                                <td>3D Visualization</td>
+                                <td><a href="#">3D Visualization</a></td>
                                 <td>460</td>
                                 <td>6</td>
                             </tr>
@@ -524,39 +546,57 @@
 
             </div>
 
-            <a href="#" class="btn learn-more">Learn More</a>
+            <a href="#" class="btn learn-more isdb-button">Learn More</a>
 
         </div>
     </section>
 
     <!-- 6. FOOTER -->
-    <footer class="pt-5 pb-3">
-        <div class="container">
-            <div class="row g-4 mb-4">
-                <div class="col-md-4">
-                    <h5 class="text-white mb-3">IsDB-BISEW</h5>
-                    <p class="small">Islamic Development Bank-Bangladesh Islamic Solidarity Educational Wakf was
-                        established to undertake educational and human resource development programmes.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="text-white mb-3">Quick Links</h5>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#">CareerHub Placement Cell</a></li>
-                        <li class="mb-2"><a href="#">IT Scholarship Overview</a></li>
-                        <li class="mb-2"><a href="#">Verification Forms</a></li>
-                        <li class="mb-2"><a href="#">Contact Support</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5 class="text-white mb-3">Contact Info</h5>
-                    <p class="small mb-1">IDB Bhaban (4th Floor), E/8-A, Rokeya Sharani</p>
-                    <p class="small mb-1">Sher-e-Bangla Nagar, Dhaka-1207, Bangladesh</p>
-                    <p class="small">Email: info@isdb-bisew.org</p>
+    <footer>
+        <div class="site-footer">
+            <div class="container-fluid footer-container">
+                <div class="row g-4">
+                    <div class="col-12 col-sm-6 col-lg-3 footer-column">
+                        <h2 class="footer-title">Address</h2>
+                        <p class="footer-address">IDB Bhaban (4th Floor)</p>
+                        <p class="footer-address">E/8-A, Rokeya Sharani, Sher-e-Bangla</p>
+                        <p class="footer-address">Nagar, Dhaka-1207, Bangladesh</p>
+                        <p class="footer-address">Phone: +88 09638 917 000</p>
+                        <p class="footer-address address-indent">+88 02223 374 601</p>
+                        <p class="footer-address">Email: idbb@isdb-bisew.org</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 footer-column">
+                        <h2 class="footer-title">IsDB-BISEW Programme</h2>
+                        <a class="footer-link" href="#">IT Scholarship Programme</a>
+                        <a class="footer-link" href="#">Vocational Training</a>
+                        <a class="footer-link" href="#">Madrasah Programme</a>
+                        <a class="footer-link" href="#">4-Year Diploma Programme</a>
+                        <a class="footer-link" href="#">Orphanage Programme</a>
+                        <a class="footer-link" href="#">Necessary Forms</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 footer-column">
+                        <h2 class="footer-title">Important Links</h2>
+                        <a class="footer-link" href="#">Project Information System for VTP</a>
+                        <a class="footer-link" href="#">Project Information System for ITP</a>
+                        <a class="footer-link" href="#">CareerHub IsDB-BISEW</a>
+                        <a class="footer-link" href="#">TSPs Monitoring System</a>
+                        <a class="footer-link" href="#">IsDB-BISEW Tenant</a>
+                        <a class="footer-link" href="#">Contact us</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3 footer-column">
+                        <h2 class="footer-title">Connect</h2>
+                        <div class="socials">
+                            <a href="#" class="social facebook">f</a>
+                            <a href="#" class="social youtube">▶</a>
+                            <a href="#" class="social x-social">𝕏</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <hr class="border-secondary">
-            <div class="text-center small">
-                <p class="mb-0">&copy; IsDB-BISEW. All rights reserved. Designed for UI Cloning Demo.</p>
+        </div>
+        <div class="copyright">
+            <div class="container-fluid copyright-container">
+                <p class="copyright-text">© 2026 IsDB-BISEW All rights reserved</p>
             </div>
         </div>
     </footer>
