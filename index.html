@@ -14,8 +14,8 @@
 
 <body class="">
 
-    <nav class="navbar navbar-expand-lg site-navbar navbar-dark">
-        <div class="container-fluid nav-inner px-3 px-lg-0">
+    <nav class="navbar navbar-expand-lg site-navbar  navbar-dark ">
+        <div class="container-fluid nav-inner site-container px-3 px-lg-0">
             <a class="brand" href="#"><img src="assets/isdb-bisew.png" alt="IsDB-BISEW logo"><span
                     class="brand-text"><span class="brand-name">IsDB-BISEW</span><span class="brand-sub">Islamic
                         Development
@@ -50,37 +50,40 @@
         </div>
     </nav>
 
-    <div class="nav-down-container site-container">
-        <div class="">
-            <a href="#" class="btn isdb-button">Trending Now</a>
 
-        </div>
-        <div class="sec-caro">
-            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="..." class="d-block w-100" alt="...">
+    <section class="trending-wrap site-container">
+        <div class="container">
+            <div id="trendingCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="trending-inner">
+                    <div class="trending-label">TRENDING NOW</div>
+
+                    <div class="carousel-inner trending-text">
+                        <div class="carousel-item active">
+                            <a href="#">4-Year Diploma Scholarship Programme</a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">Vocational Training - Round 43</a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">Bi-monthly news update from IsDB-BISEW</a>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
+
+                    <div class="trending-controls">
+                        <button class="trend-btn" type="button" data-bs-target="#trendingCarousel" data-bs-slide="prev"
+                            aria-label="Previous">
+                            ‹
+                        </button>
+                        <button class="trend-btn" type="button" data-bs-target="#trendingCarousel" data-bs-slide="next"
+                            aria-label="Next">
+                            ›
+                        </button>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
         </div>
-    </div>
+    </section>
+
 
     <!-- 3. HERO SLIDER -->
     <div class=" hero-bg">
