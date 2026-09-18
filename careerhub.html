@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/aboutisdb.css">
+    <link rel="stylesheet" href="css/careerpage.css">
 
 
     <title>Document</title>
@@ -25,7 +25,7 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-end" id="mainNav">
                 <ul class="navbar-nav align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link " href="#">About IsDB-BISEW</a></li>
+                    <li class="nav-item"><a class="nav-link " href="aboutisdb.html">About IsDB-BISEW</a></li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown">What We Do</a>
                         <ul class="dropdown-menu">
@@ -51,22 +51,59 @@
     </nav>
 
     <!-- navbar end here -->
-    <main class="about-hero">
-        <video class="hero-video" autoplay muted loop playsinline>
-            <source src="video/video.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-copy">
-                <p class="welcome">Welcome</p>
-                <p class="to">to</p>
-                <h1 class="hero-title">IsDB-BISEW</h1>
-                <p class="hero-description">Islamic Development Bank-Bangladesh Islamic Solidarity Educational Wakf
-                    (IsDB-BISEW) was established following an agreement between the Islamic Development Bank, Jeddah,
-                    Saudi Arabia, and the Government of Bangladesh.</p>
-            </div>
+    <main class="container page site-container pt-3">
+        <div class="row gx-4">
+            <aside class="col-lg-2 side">
+                <div class="side-title">Related Topics</div>
+                <div class="links">
+                    <a>IT Scholarship Programme<br>Objective</a><a>IT Scholarship Programme<br>Overview</a><a>IT
+                        Scholarship Unique Features</a><a>Training and Assessment</a><a>Placement Cell of the
+                        Programme</a><a>Testing Centre at IsDB-BISEW</a><a>Enlistment as Training Service<br>Provider
+                        (TSP)</a><a>Skill Survey Report</a><a>IT Scholarship Courses</a><a>IT Scholarship
+                        Programme<br>Training Courses</a><a>Training Service Providers (TSPs)</a><a>Frequently Asked
+                        Questions</a><a class="current">CareerHub</a><a>IT Scholarship
+                        Programme<br>Outcome</a><a>Program Information System (PIS)</a>
+                </div>
+
+                <div class="promo">
+                    <h3>IT Scholarship</h3>
+                    <div><img src="assets/r46.gif"><a class="apply">Apply Now</a></div>
+                </div>
+                <div class="promo">
+                    <h3>Vocational Training<br>(Round- 44)</h3>
+                    <div><img src="assets/voc.jpg"><a class="apply">Apply Now</a>
+                        <section class="dates">
+                            <p><i class="bi bi-calendar3"></i><b>Application Open:</b><br><span>01 August 2026</span>
+                            </p>
+                            <p><i class="bi bi-calendar3"></i><b>Application End:</b><br><span>30 November 2026</span>
+                            </p>
+                        </section>
+                    </div>
+                </div>
+            </aside>
+
+            <article class="col-lg-9 content">
+                <h1>CareerHub</h1>
+                <div class="date">Feb 03, 2026 /</div>
+                <div class="intro">CareerHub offers recruitment services to employers looking for qualified IT personnel
+                    trained under the IsDB-BISEW IT Scholarship Programme.</div>
+                <ul>
+                    <li>CareerHub's services are totally <b>FREE</b>.</li>
+                    <li>It offers a huge collection of vendor-certified IT personnel.</li>
+                    <li>It enables simplified sourcing of qualified IT personnel.</li>
+                    <li>Further recruitment assistance is available from IsDB-BISEW's Placement Cell.</li>
+                </ul>
+                <div class="help">
+                    <h2>Placement Cell Helpline</h2>
+                    <p>Contact No: +8801670462007, +8801977450991, +88 0255008124</p>
+                    <p>From 9:00 am to 5:00 pm</p>
+                    <div class="career">Visit CareerHub : <a href="https://careerhub.isdb-bisew.info/"
+                            target="_blank">https://careerhub.isdb-bisew.info/</a></div>
+                </div>
+                <div class="share"><button onclick="print()">♨ Print</button><span><a>f</a><a>♥</a><a>in</a></span>
+                </div>
+            </article>
         </div>
-        <div class="scroll-cue">⌄</div>
     </main>
     <!-- 6. FOOTER -->
     <footer>
@@ -117,6 +154,8 @@
             </div>
         </div>
     </footer>
+
+    <script>addEventListener('scroll', () => top.classList.toggle('show', scrollY > 250)); top.onclick = () => scrollTo({ top: 0, behavior: 'smooth' });</script>
 </body>
 
 </html>

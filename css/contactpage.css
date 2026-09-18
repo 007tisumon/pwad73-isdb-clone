@@ -1,0 +1,450 @@
+/* ==========================================================
+   IsDB-BISEW Contact Page
+   Bootstrap 5.3.8 + custom CSS3
+   Designed to closely reproduce the supplied screenshot.
+   ========================================================== */
+
+:root {
+  --cyan: #119bc0;
+  --cyan-dark: #0786aa;
+  --cyan-light: #e9f8fb;
+  --text: #444;
+  --border: #d9d9d9;
+}
+.main-content {
+  padding-top: 7px;
+  padding-bottom: 50px;
+  margin-top: 5rem !important;
+}
+
+.content-section {
+  margin-bottom: 17px;
+}
+
+.section-title,
+.sidebar-title {
+  height: 25px;
+  background: linear-gradient(#1ca4c5, #0f93b4);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  width: 100%;
+  border-bottom: 1px solid #0a88a6;
+  position: relative;
+}
+
+.section-title {
+  width: 75px;
+  min-width: 75px;
+}
+
+.content-section .section-title::after,
+.important-links .sidebar-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+  height: 1px;
+  background: #169bb7;
+}
+
+/* ==========================================================
+   CONTACT INFO + MAP
+   ========================================================== */
+
+.contact-area {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 10px;
+  padding-top: 15px;
+}
+
+.contact-details {
+  padding-left: 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.contact-details p {
+  margin: 0 0 3px;
+}
+
+.contact-details strong {
+  font-weight: 700;
+  color: #4b4b4b;
+}
+
+.contact-spacer {
+  height: 12px;
+}
+
+.map-wrap {
+  height: 260px;
+  overflow: hidden;
+  background: #eef0ee;
+}
+
+.map-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ==========================================================
+   IMPORTANT LINKS
+   ========================================================== */
+
+.important-links {
+  width: 100%;
+}
+
+.sidebar-title {
+  height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.important-links > a {
+  display: block;
+  min-height: 24px;
+  padding: 5px 6px;
+  color: #555;
+  text-decoration: none;
+  background: linear-gradient(#fff, #fafafa);
+  border: 1px solid #e2e2e2;
+  border-top: 0;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.important-links > a:hover {
+  background: var(--cyan-light);
+  color: #168ba6;
+}
+
+/* ==========================================================
+   QUERY FORM
+   ========================================================== */
+
+.query-section {
+  margin-top: 15px;
+}
+
+.contact-form {
+  padding-top: 15px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 135px 1fr;
+  column-gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-row > label {
+  text-align: right;
+  color: #4d4d4d;
+  font-size: 10px;
+  padding-right: 0;
+}
+
+.form-row > label span {
+  color: #b95b5b;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  background: #fff;
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.025);
+}
+
+.form-row input {
+  height: 28px;
+  padding: 5px 9px;
+}
+
+.form-row textarea {
+  height: 74px;
+  padding: 7px 9px;
+  resize: vertical;
+}
+
+.form-row input::placeholder,
+.form-row textarea::placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  border-color: #83cbd8;
+  box-shadow: 0 0 0 2px rgba(17, 155, 192, 0.08);
+}
+
+.captcha-row {
+  align-items: start;
+  margin-top: 1px;
+}
+
+.captcha-box {
+  width: 100%;
+}
+
+.captcha-image {
+  width: 96px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 5px;
+  overflow: hidden;
+  user-select: none;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  background:
+    repeating-linear-gradient(
+      170deg,
+      transparent 0 6px,
+      rgba(0, 0, 0, 0.18) 7px 8px,
+      transparent 9px 13px
+    ),
+    #fff;
+}
+
+.captcha-image span:nth-child(1) {
+  color: #009bb7;
+  transform: rotate(-7deg);
+}
+.captcha-image span:nth-child(2) {
+  color: #a53291;
+  transform: rotate(5deg);
+}
+.captcha-image span:nth-child(3) {
+  color: #c74675;
+  transform: rotate(-3deg);
+}
+.captcha-image span:nth-child(4) {
+  color: #674ca2;
+  transform: rotate(7deg);
+}
+.captcha-image span:nth-child(5) {
+  color: #009d87;
+  transform: rotate(-8deg);
+}
+.captcha-image span:nth-child(6) {
+  color: #bc367e;
+  transform: rotate(3deg);
+}
+
+.captcha-box input {
+  width: 100%;
+}
+
+.button-row {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.btn-submit,
+.btn-reset {
+  border: 0;
+  color: #fff;
+  font-size: 10px;
+  padding: 5px 9px;
+  min-width: 55px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: #179bb8;
+  margin-right: 5px;
+}
+
+.btn-submit:hover {
+  background: #087f9c;
+}
+
+.btn-reset {
+  background: #e7004d;
+}
+
+.btn-reset:hover {
+  background: #c90042;
+}
+
+.form-message {
+  display: none;
+  margin: 10px 0 0 145px;
+  color: #17869c;
+  font-size: 10px;
+}
+
+.form-message.show {
+  display: block;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 991.98px) {
+  .container {
+    width: min(94%, 875px);
+  }
+
+  .main-content {
+    padding-top: 12px;
+  }
+
+  .important-links {
+    margin-top: 0;
+  }
+
+  .contact-area {
+    grid-template-columns: 1fr 1.45fr;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    font-size: 12px;
+  }
+
+  .site-header-inner {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .brand-line {
+    font-size: 7px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .contact-area {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .map-wrap {
+    height: 300px;
+  }
+
+  .form-row {
+    grid-template-columns: 105px 1fr;
+    column-gap: 8px;
+  }
+
+  .form-row > label {
+    font-size: 10px;
+  }
+
+  .form-message {
+    margin-left: 113px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: calc(100% - 20px);
+  }
+
+  .site-header {
+    min-height: 55px;
+  }
+
+  .site-header-inner {
+    min-height: 55px;
+  }
+
+  .brand-logo {
+    width: 38px;
+    margin-right: 5px;
+  }
+
+  .logo-building {
+    width: 31px;
+    height: 37px;
+  }
+
+  .brand-name {
+    font-size: 16px;
+  }
+
+  .brand-line {
+    font-size: 6.5px;
+  }
+
+  .mobile-menu-btn {
+    font-size: 23px;
+  }
+
+  .section-title,
+  .sidebar-title {
+    font-size: 10px;
+  }
+
+  .contact-details {
+    font-size: 11px;
+  }
+
+  .map-wrap {
+    height: 260px;
+  }
+
+  .form-row {
+    display: block;
+    margin-bottom: 11px;
+  }
+
+  .form-row > label {
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+  }
+
+  .form-row input,
+  .form-row textarea {
+    font-size: 11px;
+  }
+
+  .captcha-box input {
+    width: 100%;
+  }
+
+  .form-message {
+    margin-left: 0;
+  }
+}
+
+/* Very narrow phones */
+@media (max-width: 360px) {
+  .brand-name {
+    font-size: 14px;
+  }
+
+  .brand-line {
+    font-size: 5.7px;
+  }
+
+  .map-wrap {
+    height: 230px;
+  }
+}

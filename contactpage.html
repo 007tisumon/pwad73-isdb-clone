@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/aboutisdb.css">
+    <link rel="stylesheet" href="css/contactpage.css">
 
 
     <title>Document</title>
@@ -25,7 +25,7 @@
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-end" id="mainNav">
                 <ul class="navbar-nav align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link " href="#">About IsDB-BISEW</a></li>
+                    <li class="nav-item"><a class="nav-link " href="aboutisdb.html">About IsDB-BISEW</a></li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
                             data-bs-toggle="dropdown">What We Do</a>
                         <ul class="dropdown-menu">
@@ -49,25 +49,120 @@
             </div>
         </div>
     </nav>
+    <!-- end nav -->
+    <main class="container main-content site-container">
+        <div class="row g-4">
 
-    <!-- navbar end here -->
-    <main class="about-hero">
-        <video class="hero-video" autoplay muted loop playsinline>
-            <source src="video/video.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <div class="hero-copy">
-                <p class="welcome">Welcome</p>
-                <p class="to">to</p>
-                <h1 class="hero-title">IsDB-BISEW</h1>
-                <p class="hero-description">Islamic Development Bank-Bangladesh Islamic Solidarity Educational Wakf
-                    (IsDB-BISEW) was established following an agreement between the Islamic Development Bank, Jeddah,
-                    Saudi Arabia, and the Government of Bangladesh.</p>
+            <!-- LEFT CONTENT -->
+            <div class="col-lg-9">
+
+                <!-- Contact information -->
+                <section class="content-section">
+                    <div class="section-title">Contact Info</div>
+
+                    <div class="contact-area">
+                        <div class="contact-details">
+                            <p><strong>IsDB-BISEW</strong></p>
+                            <p>IDB Bhaban (4th Floor)</p>
+                            <p>E/8-A, Rokeya Sharani</p>
+                            <p>Sher-e-Bangla Nagar</p>
+                            <p>Dhaka-1207, Bangladesh</p>
+                            <p>Phones: <strong>+88 09638 917 000</strong></p>
+
+                            <div class="contact-spacer"></div>
+
+                            <p>Email: <strong>info@isdb-bisew.org</strong></p>
+
+                            <div class="contact-spacer"></div>
+
+                            <p>Web: http://isdb-bisew.org</p>
+                        </div>
+
+                        <div class="map-wrap">
+                            <!-- Replace this iframe URL with your preferred map embed if needed. -->
+                            <iframe title="IsDB-BISEW location map"
+                                src="https://www.google.com/maps?q=IsDB-BISEW%2C%20Dhaka%2C%20Bangladesh&output=embed"
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Query form -->
+                <section class="content-section query-section">
+                    <div class="section-title">Query to IsDB-BISEW</div>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <label for="name">Name <span>*</span></label>
+                            <input id="name" name="name" type="text" placeholder="Name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="phone">Phone <span>*</span></label>
+                            <input id="phone" name="phone" type="tel" placeholder="Phone" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="subject">Subject <span>*</span></label>
+                            <input id="subject" name="subject" type="text" placeholder="Subject" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email <span>*</span></label>
+                            <input id="email" name="email" type="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Message <span>*</span></label>
+                            <textarea id="message" name="message" placeholder="Message" required></textarea>
+                        </div>
+
+                        <div class="form-row captcha-row">
+                            <label aria-hidden="true"></label>
+                            <div class="captcha-box">
+                                <div class="captcha-image" aria-label="Demo captcha">
+                                    <span>7</span><span>9</span><span>q</span><span>4</span><span>b</span><span>c</span>
+                                </div>
+                                <input type="text" aria-label="Captcha" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="form-row button-row">
+                            <label></label>
+                            <div>
+                                <button class="btn-submit" type="submit">Submit</button>
+                                <button class="btn-reset" type="reset">Reset</button>
+                            </div>
+                        </div>
+
+                        <div id="formMessage" class="form-message" role="status"></div>
+                    </form>
+                </section>
+
             </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <aside class="col-lg-3">
+                <div class="important-links">
+                    <div class="sidebar-title">Important Links</div>
+
+                    <a href="#">Latest Updates</a>
+                    <a href="#">Notice</a>
+                    <a href="#">IT Scholarship Programme</a>
+                    <a href="#">Vocational Training Programme</a>
+                    <a href="#">Madrasah Education Programme</a>
+                    <a href="#">4-Year Diploma Scholarship Programme</a>
+                    <a href="#">Orphanage Programme</a>
+                    <a href="#">IsDB-Bhaban</a>
+                </div>
+            </aside>
+
         </div>
-        <div class="scroll-cue">⌄</div>
     </main>
+
+
+
     <!-- 6. FOOTER -->
     <footer>
         <div class="site-footer">

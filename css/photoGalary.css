@@ -1,0 +1,554 @@
+/* =========================================================
+   Photo Gallery - custom CSS
+   Bootstrap handles the responsive grid/components.
+   This file adds the visual styling from the reference.
+   ========================================================= */
+
+:root {
+  --brand: #0d9ab5;
+  --brand-dark: #087f96;
+  --brand-soft: #eaf8fb;
+  --border: #d9dfe2;
+  --text: #3e3e3e;
+  --muted: #777;
+  --page-bg: #fff;
+}
+
+body {
+  margin: 0;
+  background: var(--page-bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.gallery-page {
+  min-height: 100vh;
+  padding: 10px 0 45px;
+  margin-top: 4rem !important;
+}
+
+.gallery-shell {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* ---------------- Sidebar ---------------- */
+
+.sidebar-col {
+  padding-right: 18px;
+}
+
+.sidebar-inner {
+  position: sticky;
+  top: 18px;
+}
+
+.filter-title {
+  display: flex;
+  align-items: center;
+  padding: 3px 18px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 0;
+  margin-bottom: 8px;
+}
+
+.filter-list {
+  border-top: 1px solid #ececec;
+}
+
+.filter-item {
+  width: 100%;
+  min-height: 39px;
+  border: 0;
+  border-bottom: 1px solid #ececec;
+  background: #fff;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 8px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.filter-item:hover,
+.filter-item.active {
+  background: var(--brand-soft);
+  color: var(--brand-dark);
+}
+
+.filter-item .count {
+  min-width: 25px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  background: #6d7478;
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.promo-card {
+  margin-top: 18px;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.promo-heading {
+  display: flex;
+  align-items: center;
+  padding: 10px 8px;
+  background: linear-gradient(135deg, #0c91aa, #1ca0ba);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.promo-body {
+  padding: 22px 23px 20px;
+}
+
+.promo-body img {
+  width: 100%;
+  aspect-ratio: 1 / 0.82;
+  object-fit: cover;
+  border-radius: 9px;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.promo-btn {
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #169ab4;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.promo-btn:hover {
+  color: #fff;
+  background: var(--brand-dark);
+  transform: translateY(-1px);
+}
+
+.application-info {
+  border-top: 1px solid #eee;
+  margin-top: 18px;
+  padding-top: 16px;
+}
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 14px;
+  color: #606060;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.info-row:last-child {
+  margin-bottom: 0;
+}
+
+.info-row i {
+  color: #168da5;
+  font-size: 15px;
+  margin-top: 2px;
+}
+
+/* ---------------- Gallery header ---------------- */
+
+.gallery-col {
+  padding-left: 6px;
+}
+
+.gallery-header {
+  border-bottom: 2px solid var(--brand);
+  margin-bottom: 20px;
+}
+
+.gallery-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gallery-heading {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 500;
+  color: #444;
+}
+
+.filter-icon-btn {
+  border: 0;
+  background: transparent;
+  color: #0d8ca5;
+  padding: 4px 2px;
+  font-size: 17px;
+  line-height: 1;
+}
+
+/* ---------------- Timeline ---------------- */
+
+.timeline {
+  position: relative;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  bottom: 18px;
+  width: 2px;
+  background: #d7dfe2;
+}
+
+.timeline-group {
+  position: relative;
+  padding-bottom: 34px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -28px;
+  top: 3px;
+  width: 20px;
+  height: 20px;
+  border: 3px solid var(--brand);
+  border-radius: 50%;
+  background: #fff;
+  z-index: 2;
+}
+
+.group-header {
+  min-height: 28px;
+  padding-left: 3px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.group-header h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+  color: #444;
+}
+
+.group-header time {
+  color: #777;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.photo-card {
+  display: block;
+  overflow: hidden;
+  background: #f4f4f4;
+  border-radius: 4px;
+  aspect-ratio: 1.72 / 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition:
+    transform 0.35s ease,
+    filter 0.35s ease;
+}
+
+.photo-card:hover img {
+  transform: scale(1.045);
+  filter: brightness(0.93);
+}
+
+/* First group is intentionally 2 columns like the reference */
+.timeline-group:first-child .photo-grid,
+.timeline-group:nth-child(3) .photo-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 70%;
+}
+
+/* ---------------- Pagination ---------------- */
+
+.pagination-wrap {
+  margin: 3px 0 0 0;
+  padding-left: 0;
+}
+
+.pagination .page-link {
+  min-width: 34px;
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-color: #dfe3e5;
+  color: #5e6a6e;
+  font-size: 13px;
+  background: #fff;
+}
+
+.pagination .page-item.active .page-link {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+
+.pagination .page-item:not(.active):not(.disabled) .page-link:hover {
+  background: var(--brand-soft);
+  color: var(--brand-dark);
+}
+
+/* ---------------- Mobile ---------------- */
+
+.mobile-header {
+  min-height: 55px;
+  background: #fff;
+  border-bottom: 2px solid var(--brand);
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.08);
+}
+
+.mobile-header .container-fluid {
+  min-height: 55px;
+  padding: 0 15px;
+}
+
+.menu-btn {
+  border: 0;
+  color: var(--brand-dark);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.menu-btn i {
+  font-size: 21px;
+}
+
+.mobile-brand {
+  color: #444;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.offcanvas {
+  max-width: 330px;
+}
+
+.offcanvas-title {
+  color: var(--brand-dark);
+  font-weight: 700;
+}
+
+.mobile-filter-list {
+  border-top: 0;
+}
+
+.mobile-promos .promo-card {
+  margin-top: 0;
+}
+
+.back-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #76c5d2;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.94);
+  color: var(--brand-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.25s ease;
+  z-index: 1020;
+}
+
+.back-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-top:hover {
+  background: var(--brand);
+  color: #fff;
+}
+
+/* ---------------- Breakpoints ---------------- */
+
+@media (max-width: 1199.98px) {
+  .gallery-shell {
+    max-width: 1100px;
+  }
+
+  .photo-grid {
+    gap: 20px;
+  }
+
+  .timeline-group:first-child .photo-grid,
+  .timeline-group:nth-child(3) .photo-grid {
+    max-width: 78%;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .gallery-page {
+    padding-top: 18px;
+  }
+
+  .gallery-shell {
+    padding: 0 16px;
+  }
+
+  .sidebar-col {
+    display: none;
+  }
+
+  .gallery-col {
+    padding-left: 0;
+  }
+
+  .gallery-header {
+    margin-bottom: 18px;
+  }
+
+  .timeline {
+    padding-left: 25px;
+  }
+
+  .timeline::before {
+    left: 7px;
+  }
+
+  .timeline-dot {
+    left: -2px;
+  }
+
+  .photo-grid,
+  .timeline-group:first-child .photo-grid,
+  .timeline-group:nth-child(3) .photo-grid {
+    max-width: none;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 14px;
+  }
+
+  .gallery-page {
+    padding: 12px 0 30px;
+  }
+
+  .gallery-shell {
+    padding: 0 12px;
+  }
+
+  .gallery-heading h1 {
+    font-size: 17px;
+  }
+
+  .group-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 11px;
+  }
+
+  .group-header h2 {
+    font-size: 16px;
+  }
+
+  .group-header time {
+    font-size: 12px;
+  }
+
+  .timeline {
+    padding-left: 22px;
+  }
+
+  .timeline::before {
+    left: 6px;
+  }
+
+  .timeline-dot {
+    left: -2px;
+    width: 17px;
+    height: 17px;
+    border-width: 2px;
+  }
+
+  .photo-grid,
+  .timeline-group:first-child .photo-grid,
+  .timeline-group:nth-child(3) .photo-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .photo-card {
+    aspect-ratio: 1.65 / 1;
+  }
+
+  .timeline-group {
+    padding-bottom: 27px;
+  }
+
+  .pagination-wrap {
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .pagination {
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+
+  .back-top {
+    right: 16px;
+    bottom: 16px;
+  }
+}
